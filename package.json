@@ -1,0 +1,11 @@
+{
+  "name": "grovemade",
+  "version": "1.0.0",
+  "description": "landing page with using flex, grid and some bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nataliia Kudaieva",
+  "license": "ISC"
+}
