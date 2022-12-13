@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../fonts/RobotoMono-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../fonts/RobotoMono-SemiBold.ttf);
+  font-weight: 600;
+}
+
+html {
+  font-family: "Roboto Mono";
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+//////supportive classes
+///
+.heading--primary {
+  font-weight: 400;
+  font-size: 2.6rem;
+}
+
+.heading--secondary {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.link--customized {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: $white;
+  transition: all 0.3s ease-in-out;
+}
+.link--customized::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 100%;
+  transition: all 400ms;
+}
+.link--customized::after:hover {
+  background-size: 0 3px, 100% 3px;
+  background: linear-gradient(to right, rgb(112, 211, 156), rgb(238, 240, 240)),
+    linear-gradient(
+      to right,
+      rgb(1, 65, 30),
+      rgb(42, 177, 64),
+      rgb(238, 236, 113)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}

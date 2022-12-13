@@ -1,0 +1,35 @@
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  &__left,
+  &__right {
+    padding: 1.5rem;
+  }
+  &__info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__link {
+    display: inline-block;
+  }
+  &__name {
+    color: $black;
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+  &__link {
+    color: $black;
+    font-size: 0.1em 0.6rem;
+    text-transform: uppercase;
+  }
+  &__link:link {
+    color: $black;
+    font-size: 1.3rem;
+  }
+}
