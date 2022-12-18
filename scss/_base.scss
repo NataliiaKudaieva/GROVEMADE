@@ -30,7 +30,7 @@ a {
 }
 
 //////supportive classes
-///
+
 .heading--primary {
   font-weight: 400;
   font-size: 2.6rem;
@@ -46,26 +46,24 @@ a {
   text-transform: uppercase;
   font-size: 1.3rem;
   color: $white;
-  transition: all 0.3s ease-in-out;
-}
-.link--customized::after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 3px;
-  width: 100%;
-  transition: all 400ms;
-}
-.link--customized::after:hover {
-  background-size: 0 3px, 100% 3px;
-  background: linear-gradient(to right, rgb(112, 211, 156), rgb(238, 240, 240)),
+  bottom: -3px;
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
     linear-gradient(
       to right,
-      rgb(1, 65, 30),
-      rgb(42, 177, 64),
-      rgb(238, 236, 113)
+      rgb(131, 177, 14),
+      rgb(97, 225, 23),
+      rgb(3, 108, 35)
     );
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.link--customized:hover {
+  background-size: 0 3px, 100% 3px;
 }
