@@ -18,6 +18,11 @@
   &__link {
     display: inline-block;
   }
+
+  &__img {
+    max-width: 100%;
+  }
+
   &__name {
     color: $black;
     font-size: 1.8rem;
@@ -31,5 +36,20 @@
   &__link:link {
     color: $black;
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: $medium) {
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $smallest) {
+  .product {
+    &__img {
+      width: 100%;
+    }
   }
 }
