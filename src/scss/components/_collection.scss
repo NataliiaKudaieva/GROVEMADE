@@ -1,0 +1,19 @@
+.collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 40px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  &__content {
+    display: flex;
+    padding: 0 5px;
+  }
+}

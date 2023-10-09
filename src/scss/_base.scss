@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../fonts/RobotoMono-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../fonts/RobotoMono-SemiBold.ttf);
+  font-weight: 600;
+}
+
+html {
+  font-family: "Roboto Mono";
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+[class*="__container"] {
+  padding: 1rem 1.5rem;
+}

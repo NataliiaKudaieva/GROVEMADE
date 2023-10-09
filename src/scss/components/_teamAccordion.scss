@@ -1,0 +1,43 @@
+.team__accordion {
+  position: absolute;
+  bottom: -120px;
+  z-index: 22;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 15px 30px 30px;
+
+  &--heading {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 0;
+    margin: 0;
+  }
+  &--icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: ($small)) {
+  .team__accordion {
+    &--heading {
+      text-align: center;
+      font-size: 14px;
+    }
+    &--icon {
+      max-width: 25px;
+      max-height: 25px;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.open-acc {
+  height: 100%;
+}

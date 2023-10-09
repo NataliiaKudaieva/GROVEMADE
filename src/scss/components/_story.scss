@@ -1,0 +1,60 @@
+.story {
+  margin-bottom: 8rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    display: block;
+    cursor: pointer;
+    top: -10px;
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    color: aquamarine;
+    fill: black;
+  }
+  &__title {
+    padding-top: 0;
+    color: #fff;
+  }
+  &__motto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $grey-background;
+    margin: 0 4rem;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: $small) {
+  .story {
+    padding: 30px 0;
+    &__heading--primary {
+      font-size: 36px;
+    }
+
+    &__heading--primary {
+      font-size: 18.5px;
+    }
+    &__motto {
+      margin: 0;
+      justify-content: center;
+    }
+  }
+}

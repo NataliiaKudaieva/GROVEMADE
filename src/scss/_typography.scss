@@ -1,0 +1,51 @@
+.header__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6rem 12rem;
+  text-align: center;
+  &__heading--primary {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000;
+  }
+  &__heading--secondary {
+    padding: 0 11rem;
+    color: $grey-text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.8px;
+    display: block;
+  }
+}
+
+.white {
+  color: #ffff;
+}
+
+@media (max-width: $large) {
+  .header__section {
+    padding: 3rem 5rem;
+
+    &__heading--secondary {
+      padding: 0 2.5rem;
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .header__section {
+    padding: 1.5rem 1rem;
+
+    &__heading--primary {
+      font-size: 22px;
+    }
+    &__heading--secondary {
+      font-size: 13.5px;
+      padding: 0 0.5rem;
+    }
+  }
+}

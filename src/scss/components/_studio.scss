@@ -1,0 +1,23 @@
+.studio {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__img {
+    display: block;
+    max-width: 80%;
+    min-height: 100%;
+    align-self: center;
+  }
+}
+
+@media (max-width: $large) {
+  .studio {
+    &__img {
+      max-width: 100%;
+    }
+  }
+}

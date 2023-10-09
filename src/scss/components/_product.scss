@@ -1,0 +1,86 @@
+.product {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__started {
+    padding: 2rem 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__deskpads,
+  &__laptopstands {
+    padding: 1.5rem;
+  }
+  &__info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  &__link {
+    display: inline-block;
+  }
+
+  &__img {
+    max-width: 100%;
+    display: block;
+  }
+
+  &__name {
+    color: $black;
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+  &__link {
+    color: $black;
+    font-size: 0.1em 0.6rem;
+    text-transform: uppercase;
+  }
+  &__link:link {
+    color: $black;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: $medium) {
+  .product__section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__deskpads {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: $small) {
+  .product {
+    &__deskpads,
+    &__laptopstands {
+      padding: 0;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+}
