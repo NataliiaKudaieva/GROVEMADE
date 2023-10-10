@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-
+  height: 100%;
   &__started {
     padding: 2rem 0;
     width: 100%;
@@ -40,7 +40,7 @@
   display: block;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 1.3rem 0;
+  padding: 2rem 0;
   width: 100%;
   &__list {
     display: flex;
@@ -82,18 +82,20 @@
 /*  Menu */
 
 .menu {
+  z-index: 5555;
   display: none;
   position: absolute;
-  min-width: 100%;
   top: 0;
-  right: 0;
   left: 0;
   bottom: 0;
+  right: 0;
   background: #eee;
-  padding: 2rem 0;
+
   &__icon {
     display: none;
     color: #000;
+    position: absolute;
+    z-index: 8888;
     width: 30px;
     height: 30px;
     fill: #000;
@@ -125,7 +127,7 @@
 }
 
 .show-menu {
-  z-index: 5555;
+  z-index: 999999;
   display: block;
   position: fixed;
 }
@@ -135,11 +137,14 @@
 @media (max-width: $medium) {
   .nav {
     display: flex;
-    justify-content: center;
-    padding: 1rem 0;
+    justify-content: flex-start;
+    padding: 0;
     &__list {
       display: flex;
-      padding: 0;
+
+      position: absolute;
+      padding: 1.5rem 2rem;
+      background-color: $white;
     }
     &__link {
       font-size: 1.2rem;
@@ -154,21 +159,15 @@
       align-items: center;
     }
     &__link--logo {
-      margin-bottom: 15px;
+      display: none;
     }
   }
 
   .menu {
     &__icon {
       display: inline-block;
-    }
-  }
-}
-
-@media (max-width: $smallest) {
-  .nav {
-    &__item:first-child {
-      margin-right: 10px;
+      z-index: 77777;
+      animation: pulse 2s infinite;
     }
   }
 }
