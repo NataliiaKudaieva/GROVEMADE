@@ -1,10 +1,15 @@
 .story {
-  margin-bottom: 8rem;
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  &__subheading {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 50px;
   }
   &__link {
     position: relative;
@@ -39,6 +44,13 @@
     background-color: $grey-background;
     margin: 0 4rem;
     min-height: 400px;
+  }
+
+  &__img {
+    display: block;
+    background-size: contain;
+    object-fit: cover;
+    width: 100%;
   }
 }
 

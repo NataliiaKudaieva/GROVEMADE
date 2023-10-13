@@ -12,6 +12,15 @@
     min-height: 100%;
     align-self: center;
   }
+
+  &__desc {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: start;
+    line-height: 1.6;
+    padding: 15px 25px;
+    max-width: 1000px;
+  }
 }
 
 @media (max-width: $large) {
