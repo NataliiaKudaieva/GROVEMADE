@@ -10,531 +10,561 @@
     <script type="module" defer src="src/js/index.js"></script>
   </head>
   <body>
-    <header class="header" id="header">
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#collection" class="nav__link underlined">Shop</a>
+    <div id="wrapper">
+      <header class="header" id="header">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#collection" class="nav__link underlined">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="#product" class="nav__link underlined">Explore</a>
+            </li>
+            <li class="nav__item">
+              <a href="#header" class="nav__link--logo"
+                ><img class="logo" src="./src/assets/logo.png" alt="logo"
+              /></a>
+              <svg
+                width="800px"
+                height="800px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="menu__icon"
+              >
+                <path
+                  d="M4 6H20M4 12H20M4 18H20"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li class="nav__item">
+              <a href="#collection" class="nav__link underlined">My cart</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- - -- -- -- -- -- --HORIZONTAL MENU -- -- -- -- -- -- --->
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#collection" class="menu__link underlined">Shop</a>
           </li>
-          <li class="nav__item">
-            <a href="#product" class="nav__link underlined">Explore</a>
+          <li class="menu__item">
+            <a href="#product" class="menu__link underlined">Explore</a>
           </li>
-          <li class="nav__item">
-            <a href="#header" class="nav__link--logo"
-              ><img class="logo" src="./src/assets/logo.png" alt="logo"
-            /></a>
+          <li class="menu__item">
+            <a href="cart.html" class="menu__link underlined">My cart</a>
+          </li>
+          <a class="menu__close">❌</a>
+        </ul>
+      </div>
+
+      <!-- - -- -- -- -- -- -- -- -- -- -- -- -- --->
+      <div class="intro" id="intro">
+        <h1 class="intro__heading heading--primary">The Desk Shelf System</h1>
+        <h2 class="intro__subheading heading--secondary">
+          Available in Walnut or Maple
+        </h2>
+        <a href="about.html" class="learn-more link--customized">Learn More</a>
+      </div>
+
+      <!-- - -- -- -- -- -- -- -- -- -- -- -- -- --->
+      <section class="product" id="product">
+        <div class="product__container">
+          <div class="product__started">
+            <h1 class="heading--primary">Design Inspires</h1>
+            <h2 class="heading--secondary">
+              Build your dream workspace, so you can get your best work done
+            </h2>
+            <button class="btn get-started link--customized">
+              Get Started
+            </button>
+            <div class="accordion">
+              <h1 class="accordion__heading">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit:
+              </h1>
+              <p class="accordion__text">
+                Sint onsectetur accusantium saepe aut velit rerum nemo, fuga
+                quia asperiores quasi, nisi voluptatibus ex aperiam cumque
+                veniam earum perferendis adipisci quo. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.
+              </p>
+              <span class="accordion__close">❌</span>
+            </div>
+          </div>
+          <div class="product__section">
+            <div class="product__deskpads">
+              <img
+                src="./src/assets/desk pads.png"
+                alt="desk pads photo"
+                class="product__img"
+              />
+              <div class="product__info">
+                <span class="product__name">Desk Pads</span>
+                <a href="#" class="product__link link--customized"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div class="product__laptopstands">
+              <img
+                src="./src/assets/laptopstands.png"
+                alt="laptop stands"
+                class="product__img"
+              />
+              <div class="product__info">
+                <span class="product__name">Laptop Stands</span>
+                <a href="#" class="product__link link--customized"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- - -- -- -- -- -- POP UP COMPONENT-- -- -- -- -- -- -- --->
+      <div class="popup">
+        <div class="popup__container">
+          <h2 class="popup__heading">Hello!</h2>
+          <p class="popup__text">
+            The description is not ready yet but we are working hard to add it
+            🔨
+          </p>
+          <p class="popup__text">
+            Come back when the developer will come up with a description 😍
+          </p>
+          <button aria-label="close" class="popup--close_btn">❌</button>
+        </div>
+      </div>
+
+      <!-- - -- -- -- -- -- -- -- -- -- -- -- -- --->
+
+      <section class="collection" id="collection">
+        <div class="collection__container">
+          <div class="header__started">
+            <h1 class="header__heading--start heading--primary">
+              Featured Products
+            </h1>
+            <h2 class="header__motto heading--secondary">
+              See What's Trending Right Now
+            </h2>
+          </div>
+          <div class="collection__content slider">
+            <div class="slider__labels">
+              <a href="#magsafe_stand" class="slider__label--link"
+                ><span class="slider__label"></span
+              ></a>
+
+              <a href="#laptop__riser" class="slider__label--link">
+                <span class="slider__label"></span
+              ></a>
+
+              <a href="#ipad__stand" class="slider__label--link">
+                <span class="slider__label"></span
+              ></a>
+
+              <a href="#monitor__stand" class="slider__label--link">
+                <span class="slider__label"></span
+              ></a>
+            </div>
+            <div class="slider__container">
+              <div class="slider__box magsafe_stand" id="magsafe_stand">
+                <img
+                  src="./src/assets//WalnutMagSafe.png"
+                  alt="WalnutMagSafe"
+                  class="slider__img"
+                />
+                <div class="slider__item--description">
+                  <span class="slider__name--item">Walnut MagSafe Stand</span>
+                  <span class="slider__item--price">$120</span>
+                </div>
+              </div>
+              <div class="slider__box laptop__riser" id="laptop__riser">
+                <img
+                  src="./src/assets//walnutLaptop.png"
+                  alt="walnutLaptop"
+                  class="slider__img"
+                />
+                <div class="slider__item--description">
+                  <span class="slider__name--item">Walnut Laptop Riser</span>
+                  <span class="slider__item--price">$150</span>
+                </div>
+              </div>
+              <div class="slider__box ipad__stand" id="ipad__stand">
+                <img
+                  src="./src/assets//WalnutIpodStand.png"
+                  alt="WalnutIpadStand"
+                  class="slider__img"
+                />
+                <div class="slider__item--description">
+                  <span class="slider__name--item">Walnut Ipad Stand</span>
+                  <span class="slider__item--price">$80</span>
+                </div>
+              </div>
+              <div class="slider__box monitor__stand" id="monitor__stand">
+                <img
+                  src="./src/assets//WalnutMonitorStand.png"
+                  alt="WalnutMonitorStand"
+                  class="slider__img"
+                />
+                <div class="slider__item--description">
+                  <span class="slider__name--item">Walnut Monitor Stand</span>
+                  <span class="slider__item--price">$100</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- - -- -- -- -- -- -- -- -- -- -- -- -- --->
+
+      <div class="home__office" id="home__office">
+        <div class="home__office__container">
+          <h1 class="header__section__heading--primary white">
+            Home Office Inspiration
+          </h1>
+          <h2 class="home__office--secondary">
+            Working from home can be a challenge—see some creative solutions to
+            get it just right.
+          </h2>
+          <a href="#" class="learn-more link--customized">Learn More</a>
+        </div>
+      </div>
+
+      <!-- - -- -- -- -- -- -- -- -- -- -- -- -- --->
+
+      <div class="studio" id="studio">
+        <div class="studio__container">
+          <div class="studio__div header__section">
+            <h1 class="header__section__heading--primary">Made The Hard Way</h1>
+            <h2 class="header__section__heading--secondary">
+              Our signature craftsmanship has been honed over a decade of
+              manufacturing innovation here in Portland, Oregon. We combine the
+              skills of our small in-house team with the collective strength of
+              collaborators throughout the US to deliver quality products worth
+              investing in.
+            </h2>
+          </div>
+          <img
+            src="./src/assets//manufacture.png"
+            alt="our studio"
+            class="studio__img"
+          />
+        </div>
+      </div>
+
+      <!-- - -- -- -- -- -- -- -- -- -- -- -- -- --->
+      <section class="team" id="team">
+        <div class="team__container">
+          <div class="team__header header__section">
+            <h1 class="header__section__heading--primary load-hidden">
+              Make Work Meaningful
+            </h1>
+            <h2 class="header__section__heading--secondary">
+              We're here because we believe that your work deserves the best. A
+              team that loves working together is the magic that makes it all
+              happen.
+            </h2>
+          </div>
+          <div class="team__members">
+            <img
+              src="./src/assets//customer1.png"
+              alt="member1"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer2.png"
+              alt="member2"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer3.png"
+              alt="member3"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer4.png"
+              alt="member4"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer5.png"
+              alt="member5"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer6.png"
+              alt="member6"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer7.png"
+              alt="member7"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer8.png"
+              alt="member8"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer9.png"
+              alt="member9"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer10.png"
+              alt="member10"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer11.png"
+              alt="member11"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer12.png"
+              alt="member12"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer13.png"
+              alt="member13"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer14.png"
+              alt="member14"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer15.png"
+              alt="member15"
+              class="team__member hide"
+            />
+            <img
+              src="./src/assets//customer16.png"
+              alt="member16"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer17.png"
+              alt="member17"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer18.png"
+              alt="member18"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer19.png"
+              alt="member19"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer20.png"
+              alt="member20"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer21.png"
+              alt="member21"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer22.png"
+              alt="member22"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer23.png"
+              alt="member23"
+              class="team__member"
+            />
+            <img
+              src="./src/assets//customer24.png"
+              alt="member24"
+              class="team__member"
+            />
+          </div>
+          <div class="team__accordion">
+            <h3 class="team__accordion--heading">Show more our members...</h3>
+            <svg
+              class="team__accordion--icon"
+              id="arrow__down"
+              fill="#000000"
+              width="800px"
+              height="800px"
+              viewBox="0 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.256 8.606c0-0.269 0.106-0.544 0.313-0.75 0.412-0.412 1.087-0.412 1.5 0l14.119 14.119 13.913-13.912c0.413-0.412 1.087-0.412 1.5 0s0.413 1.088 0 1.5l-14.663 14.669c-0.413 0.413-1.088 0.413-1.5 0l-14.869-14.869c-0.213-0.213-0.313-0.481-0.313-0.756z"
+              ></path>
+            </svg>
+
             <svg
               width="800px"
               height="800px"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="menu__icon"
+              class="team__accordion--icon hide"
+              id="arrow__up"
             >
               <path
-                d="M4 6H20M4 12H20M4 18H20"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7Z"
+                fill="#000000"
               />
             </svg>
-          </li>
-          <li class="nav__item">
-            <a href="#collection" class="nav__link underlined">My cart</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a href="#collection" class="menu__link underlined">Shop</a>
-        </li>
-        <li class="menu__item">
-          <a href="#product" class="menu__link underlined">Explore</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link underlined">My cart</a>
-        </li>
-        <a class="menu__close">❌</a>
-      </ul>
-    </div>
-
-    <div class="intro" id="intro">
-      <h1 class="intro__heading heading--primary">The Desk Shelf System</h1>
-      <h2 class="intro__subheading heading--secondary">
-        Available in Walnut or Maple
-      </h2>
-      <a href="#" class="learn-more link--customized">Learn More</a>
-    </div>
-
-    <section class="product" id="product">
-      <div class="product__container">
-        <div class="product__started">
-          <h1 class="heading--primary">Design Inspires</h1>
-          <h2 class="heading--secondary">
-            Build your dream workspace, so you can get your best work done
-          </h2>
-          <button class="btn get-started link--customized">Get Started</button>
-          <div class="accordion">
-            <h1 class="accordion__heading">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit:
-            </h1>
-            <p class="accordion__text">
-              Sint onsectetur accusantium saepe aut velit rerum nemo, fuga quia
-              asperiores quasi, nisi voluptatibus ex aperiam cumque veniam earum
-              perferendis adipisci quo. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
-            </p>
-            <span class="accordion__close">❌</span>
           </div>
         </div>
-        <div class="product__section">
-          <div class="product__deskpads">
-            <img
-              src="./src/assets/desk pads.png"
-              alt="desk pads photo"
-              class="product__img"
-            />
-            <div class="product__info">
-              <span class="product__name">Desk Pads</span>
-              <a href="#" class="product__link link--customized">Learn more</a>
-            </div>
-          </div>
-          <div class="product__laptopstands">
-            <img
-              src="./src/assets/laptopstands.png"
-              alt="laptop stands"
-              class="product__img"
-            />
-            <div class="product__info">
-              <span class="product__name">Laptop Stands</span>
-              <a href="#" class="product__link link--customized">Learn more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="popup">
-      <div class="popup__container">
-        <h2 class="popup__heading">Hello!</h2>
-        <p class="popup__text">
-          The description is not ready yet but we are working hard to add it 🔨
-        </p>
-        <p class="popup__text">
-          Come back when the developer will come up with a description 😍
-        </p>
-        <button aria-label="close" class="popup--close_btn">❌</button>
-      </div>
-    </div>
-
-    <section class="collection" id="collection">
-      <div class="collection__container">
-        <div class="header__started">
-          <h1 class="header__heading--start heading--primary">
-            Featured Products
-          </h1>
-          <h2 class="header__motto heading--secondary">
-            See What's Trending Right Now
-          </h2>
-        </div>
-        <div class="collection__content slider">
-          <div class="slider__labels">
-            <a href="#magsafe_stand" class="slider__label--link"
-              ><span class="slider__label"></span
-            ></a>
-
-            <a href="#laptop__riser" class="slider__label--link">
-              <span class="slider__label"></span
-            ></a>
-
-            <a href="#ipad__stand" class="slider__label--link">
-              <span class="slider__label"></span
-            ></a>
-
-            <a href="#monitor__stand" class="slider__label--link">
-              <span class="slider__label"></span
-            ></a>
-          </div>
-          <div class="slider__container">
-            <div class="slider__box magsafe_stand" id="magsafe_stand">
-              <img
-                src="./src/assets//WalnutMagSafe.png"
-                alt="WalnutMagSafe"
-                class="slider__img"
-              />
-              <div class="slider__item--description">
-                <span class="slider__name--item">Walnut MagSafe Stand</span>
-                <span class="slider__item--price">$120</span>
-              </div>
-            </div>
-            <div class="slider__box laptop__riser" id="laptop__riser">
-              <img
-                src="./src/assets//walnutLaptop.png"
-                alt="walnutLaptop"
-                class="slider__img"
-              />
-              <div class="slider__item--description">
-                <span class="slider__name--item">Walnut Laptop Riser</span>
-                <span class="slider__item--price">$150</span>
-              </div>
-            </div>
-            <div class="slider__box ipad__stand" id="ipad__stand">
-              <img
-                src="./src/assets//WalnutIpodStand.png"
-                alt="WalnutIpadStand"
-                class="slider__img"
-              />
-              <div class="slider__item--description">
-                <span class="slider__name--item">Walnut Ipad Stand</span>
-                <span class="slider__item--price">$80</span>
-              </div>
-            </div>
-            <div class="slider__box monitor__stand" id="monitor__stand">
-              <img
-                src="./src/assets//WalnutMonitorStand.png"
-                alt="WalnutMonitorStand"
-                class="slider__img"
-              />
-              <div class="slider__item--description">
-                <span class="slider__name--item">Walnut Monitor Stand</span>
-                <span class="slider__item--price">$100</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="home__office" id="home__office">
-      <div class="home__office__container">
-        <h1 class="header__section__heading--primary white">
-          Home Office Inspiration
-        </h1>
-        <h2 class="home__office--secondary">
-          Working from home can be a challenge—see some creative solutions to
-          get it just right.
-        </h2>
-        <a href="#" class="learn-more link--customized">Learn More</a>
-      </div>
-    </div>
-
-    <div class="studio" id="studio">
-      <div class="studio__container">
-        <header class="studio__header header__section">
-          <h1 class="header__section__heading--primary">Made The Hard Way</h1>
-          <h2 class="header__section__heading--secondary">
-            Our signature craftsmanship has been honed over a decade of
-            manufacturing innovation here in Portland, Oregon. We combine the
-            skills of our small in-house team with the collective strength of
-            collaborators throughout the US to deliver quality products worth
-            investing in.
-          </h2>
-        </header>
-        <img
-          src="./src/assets//manufacture.png"
-          alt="our studio"
-          class="studio__img"
-        />
-      </div>
-    </div>
-
-    <section class="team" id="team">
-      <div class="team__container">
-        <header class="team__header header__section">
-          <h1 class="header__section__heading--primary load-hidden">
-            Make Work Meaningful
-          </h1>
-          <h2 class="header__section__heading--secondary">
-            We're here because we believe that your work deserves the best. A
-            team that loves working together is the magic that makes it all
-            happen.
-          </h2>
-        </header>
-        <div class="team__members">
-          <img
-            src="./src/assets//customer1.png"
-            alt="member1"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer2.png"
-            alt="member2"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer3.png"
-            alt="member3"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer4.png"
-            alt="member4"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer5.png"
-            alt="member5"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer6.png"
-            alt="member6"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer7.png"
-            alt="member7"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer8.png"
-            alt="member8"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer9.png"
-            alt="member9"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer10.png"
-            alt="member10"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer11.png"
-            alt="member11"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer12.png"
-            alt="member12"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer13.png"
-            alt="member13"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer14.png"
-            alt="member14"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer15.png"
-            alt="member15"
-            class="team__member hide"
-          />
-          <img
-            src="./src/assets//customer16.png"
-            alt="member16"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer17.png"
-            alt="member17"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer18.png"
-            alt="member18"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer19.png"
-            alt="member19"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer20.png"
-            alt="member20"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer21.png"
-            alt="member21"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer22.png"
-            alt="member22"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer23.png"
-            alt="member23"
-            class="team__member"
-          />
-          <img
-            src="./src/assets//customer24.png"
-            alt="member24"
-            class="team__member"
-          />
-        </div>
-        <div class="team__accordion">
-          <h3 class="team__accordion--heading">Show more our members...</h3>
-          <svg
-            class="team__accordion--icon"
-            id="arrow__down"
-            fill="#000000"
-            width="800px"
-            height="800px"
-            viewBox="0 0 32 32"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.256 8.606c0-0.269 0.106-0.544 0.313-0.75 0.412-0.412 1.087-0.412 1.5 0l14.119 14.119 13.913-13.912c0.413-0.412 1.087-0.412 1.5 0s0.413 1.088 0 1.5l-14.663 14.669c-0.413 0.413-1.088 0.413-1.5 0l-14.869-14.869c-0.213-0.213-0.313-0.481-0.313-0.756z"
-            ></path>
-          </svg>
-
-          <svg
-            width="800px"
-            height="800px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="team__accordion--icon hide"
-            id="arrow__up"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M12 7C12.2652 7 12.5196 7.10536 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.4804 7.10536 11.7348 7 12 7Z"
-              fill="#000000"
-            />
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <div class="story">
-      <div class="story__container">
-        <header class="story__header header__section">
-          <h1 class="story__heading--primary header__section__heading--primary">
-            We Hope You'll Join Us
-          </h1>
-          <a
-            class="story__link underlined"
-            target="_blank"
-            href="https://savelife.in.ua/?gclid=Cj0KCQjwusunBhCYARIsAFBsUP99PpBFlvaam6vKGaClOUj-NciuDsSyCJA3573PmaQPP3SvKhfTS6YaAmzeEALw_wcB"
-            >Read more about our story
-            <object
-              data="./src/icons/right-arrow.svg"
-              class="story__icon"
-            ></object>
-          </a>
-        </header>
-      </div>
-      <div class="story__motto">
+      <!-- - -- -- -- -- -- -- -- -- -- -- -- -- --->
+      <div class="story">
         <div class="story__container">
-          <img
-            src="./src/assets//logo_fragment.png"
-            alt="logo"
-            class="story__logo"
-          />
-          <div class="story__title header__section">
-            <h1 class="story__heading--primary white">Design Inspires</h1>
-            <h2
-              class="story__heading--secondary header__section__heading--secondary white"
+          <div class="story__header header__section">
+            <h1
+              class="story__heading--primary header__section__heading--primary"
             >
-              Build your dream workspace, so you can get your best work done.
-            </h2>
+              We Hope You'll Join Us
+            </h1>
+            <a
+              class="story__link underlined"
+              target="_blank"
+              href="https://savelife.in.ua/?gclid=Cj0KCQjwusunBhCYARIsAFBsUP99PpBFlvaam6vKGaClOUj-NciuDsSyCJA3573PmaQPP3SvKhfTS6YaAmzeEALw_wcB"
+              >Read more about our story
+              <object
+                data="./src/icons/right-arrow.svg"
+                class="story__icon"
+              ></object>
+            </a>
+          </div>
+        </div>
+        <div class="story__motto">
+          <div class="story__container">
+            <img
+              src="./src/assets//logo_fragment.png"
+              alt="logo"
+              class="story__logo"
+            />
+            <div class="story__title header__section">
+              <h1 class="story__heading--primary white">Design Inspires</h1>
+              <h2
+                class="story__heading--secondary header__section__heading--secondary white"
+              >
+                Build your dream workspace, so you can get your best work done.
+              </h2>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__body">
-          <nav class="footer__nav">
-            <ul class="footer__list">
-              <li class="footer__list--item">
-                <a href="#product" class="footer__list--link">Shop</a>
-              </li>
-              <li class="footer__list--item">
-                <a href="#studio" class="footer__list--link">About </a>
-              </li>
-              <li class="footer__list--item">
-                <a href="#collection" class="footer__list--link"> Journal </a>
-              </li>
-              <li class="footer__list--item">
-                <a href="#team" class="footer__list--link">Support </a>
-              </li>
-              <li class="footer__list--item">
-                <a
-                  href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019?adgroupsurvey={adgroupsurvey}&gclid=CjwKCAjwjaWoBhAmEiwAXz8DBWbt8Gnyf8ctliUcGENz2ot8ElYrbAbriXslF0Era6ZZQ2vEPRy1SxoCxrgQAvD_BwE"
-                  class="footer__list--link"
-                  target="_blank"
+      <!-- - -- -- -- -- -- -- -- -- -- -- -- -- --->
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__list--item">
+                  <a href="#product" class="footer__list--link">Shop</a>
+                </li>
+                <li class="footer__list--item">
+                  <a href="#studio" class="footer__list--link">About </a>
+                </li>
+                <li class="footer__list--item">
+                  <a href="#collection" class="footer__list--link"> Journal </a>
+                </li>
+                <li class="footer__list--item">
+                  <a href="#team" class="footer__list--link">Support </a>
+                </li>
+                <li class="footer__list--item">
+                  <a
+                    href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019?adgroupsurvey={adgroupsurvey}&gclid=CjwKCAjwjaWoBhAmEiwAXz8DBWbt8Gnyf8ctliUcGENz2ot8ElYrbAbriXslF0Era6ZZQ2vEPRy1SxoCxrgQAvD_BwE"
+                    class="footer__list--link"
+                    target="_blank"
+                  >
+                    COVID-19 info</a
+                  >
+                </li>
+                <li class="footer__list--item">
+                  <a href="#intro" class="footer__list--link"> Order Status</a>
+                </li>
+                <li class="footer__list--item">
+                  <a href="#home__office" class="footer__list--link">
+                    Corporate Sales</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__signup signup">
+              <h1 class="signup__title">Newsletter Signup</h1>
+              <p class="signup__text">
+                Sign up to our Newsletter to hear about new product releases,
+                learn about our design process, and everything else going on
+                behind the scenes at Grovemade.
+              </p>
+              <form action="#" class="signup__form form">
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="Write your email"
+                />
+                <button class="form__btn" type="submit">Submit</button>
+                <svg
+                  fill="#000000"
+                  width="800px"
+                  height="800px"
+                  viewBox="-1.7 0 20.4 20.4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="form__icon"
                 >
-                  COVID-19 info</a
-                >
+                  <path
+                    d="M16.417 10.283A7.917 7.917 0 1 1 8.5 2.366a7.916 7.916 0 0 1 7.917 7.917zm-4.105-4.498a.791.791 0 0 0-1.082.29l-3.828 6.63-1.733-2.08a.791.791 0 1 0-1.216 1.014l2.459 2.952a.792.792 0 0 0 .608.285.83.83 0 0 0 .068-.003.791.791 0 0 0 .618-.393L12.6 6.866a.791.791 0 0 0-.29-1.081z"
+                  />
+                </svg>
+              </form>
+            </div>
+          </div>
+          <div class="footer__links links">
+            <ul class="links__list">
+              <li class="links__item">
+                <a class="links__link" href="#">©2020 Grovemade</a>
               </li>
-              <li class="footer__list--item">
-                <a href="#intro" class="footer__list--link"> Order Status</a>
+              <li class="links__item">
+                <a class="links__link">Terms & Conditions</a>
               </li>
-              <li class="footer__list--item">
-                <a href="#home__office" class="footer__list--link">
-                  Corporate Sales</a
-                >
+              <li class="links__item">
+                <a class="links__link">Privacy Policy</a>
+              </li>
+              <li class="links__item">
+                <a class="links__link">Site by Department</a>
               </li>
             </ul>
-          </nav>
-          <div class="footer__signup signup">
-            <h1 class="signup__title">Newsletter Signup</h1>
-            <p class="signup__text">
-              Sign up to our Newsletter to hear about new product releases,
-              learn about our design process, and everything else going on
-              behind the scenes at Grovemade.
-            </p>
-            <form action="#" class="signup__form form">
-              <input
-                type="email"
-                class="form__input"
-                placeholder="Write your email"
-              />
-              <button class="form__btn" type="submit">Submit</button>
-              <svg
-                fill="#000000"
-                width="800px"
-                height="800px"
-                viewBox="-1.7 0 20.4 20.4"
-                xmlns="http://www.w3.org/2000/svg"
-                class="form__icon"
-              >
-                <path
-                  d="M16.417 10.283A7.917 7.917 0 1 1 8.5 2.366a7.916 7.916 0 0 1 7.917 7.917zm-4.105-4.498a.791.791 0 0 0-1.082.29l-3.828 6.63-1.733-2.08a.791.791 0 1 0-1.216 1.014l2.459 2.952a.792.792 0 0 0 .608.285.83.83 0 0 0 .068-.003.791.791 0 0 0 .618-.393L12.6 6.866a.791.791 0 0 0-.29-1.081z"
-                />
-              </svg>
-            </form>
           </div>
         </div>
-        <div class="go-up">
+      </footer>
+
+      <!-- sticky btn go-up -->
+      <div class="go-up">
+        <div class="go-up--box">
           <a href="#header">Go up</a>
         </div>
-        <div class="footer__links links">
-          <ul class="links__list">
-            <li class="links__item">
-              <a class="links__link" href="#">©2020 Grovemade</a>
-            </li>
-            <li class="links__item">
-              <a class="links__link">Terms & Conditions</a>
-            </li>
-            <li class="links__item">
-              <a class="links__link">Privacy Policy</a>
-            </li>
-            <li class="links__item">
-              <a class="links__link">Site by Department</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </footer>
+
+      <!-- - -- -- -- -- -- -- -- -- -- -- -- -- --->
+    </div>
   </body>
 </html>
