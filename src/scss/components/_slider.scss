@@ -74,22 +74,6 @@
     color: $grey-text;
   }
 
-  &__btn {
-    display: inline-block;
-    width: 120px;
-    align-self: center;
-    padding: 12px 10px;
-    border: 0;
-    background-color: #000;
-    color: #eee;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: all ease-in-out 0.3s;
-  }
-
-  &__btn:hover {
-    transform: translateY(4px);
-  }
 }
 
 .shown {
