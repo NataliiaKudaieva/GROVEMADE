@@ -1,0 +1,39 @@
+.cart {
+  min-height: 100%;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  &__container {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  &__icon {
+    display: block;
+    max-width: 320px;
+    flex: 1 0 1;
+  }
+
+  &__empty {
+    font-size: 26px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    padding: 12px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart {
+    &__icon {
+      max-width: 250px;
+      height: 200px;
+    }
+    &__empty {
+      font-size: 18px;
+    }
+  }
+}
