@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROVEMADE/Buy</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" defer src="src/js/index.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="header" id="header">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#collection" class="nav__link underlined">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="#product" class="nav__link underlined">Explore</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#header" class="nav__link--logo"
+                ><img class="logo" src="./src/assets/logo.png" alt="logo"
+              /></a>
+              <svg
+                width="800px"
+                height="800px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="menu__icon"
+              >
+                <path
+                  d="M4 6H20M4 12H20M4 18H20"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#collection" class="nav__link underlined"
+                >My cart</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="buy">
+        <div class="buy__container">
+          <img
+            src="./src/assets/walnutLaptop.png"
+            alt="walnut__laptop"
+            class="buy__pic"
+          />
+          <div class="buy__item">
+            <p class="buy__item--name">fjkfjdjuihduihd</p>
+            <p class="buy__item--desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+              quia nemo unde natus, omnis voluptatum repellendus rerum, dicta
+              tempore nostrum magnam neque autem aspernatur repudiandae eius
+              cupiditate odio? Assumenda, rerum?
+            </p>
+            <input type="number" id="buy__input" name="buy__input" />
+            <p class="buy__item--price">Price: <span>$150</span></p>
+            <p class="buy__item--total">Total: <span>$300</span></p>
+            <button class="buy__btn buy__item--btn">Buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
