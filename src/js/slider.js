@@ -1,7 +1,9 @@
 const labels = document.querySelectorAll(".slider__label");
 const sliderBoxes = document.querySelectorAll(".slider__box");
-const btn__buy = document.createElement("button");
+const btn__buy = document.createElement("a");
+const container = document.querySelector(".buy");
 btn__buy.innerHTML = "Buy now";
+btn__buy.href = "order.html";
 
 export default function slider() {
   const syncClicks = (itemsArray, index, className) => {
@@ -9,7 +11,7 @@ export default function slider() {
       element.classList.remove(`${className}`);
     });
     itemsArray[index].classList.add(`${className}`);
-    sliderBoxes[index].appendChild(btn__buy).classList.add("slider__btn");
+    sliderBoxes[index].appendChild(btn__buy).classList.add("buy__btn");
   };
 
   labels.forEach((label, index) => {
@@ -32,6 +34,18 @@ export default function slider() {
       slide.classList.add("zoom");
 
       syncClicks(labels, index, "slider__label--active");
+      getProductInfo(btn__buy.parentNode);
     });
   });
+
+  const getProductInfo = (element) => {
+    let imgSrc = element.childNodes[1].src;
+    let imgAlt = element.childNodes[1].alt;
+    let orderName = element.childNodes[3].childNodes[1].textContent;
+    let price = element.childNodes[3].childNodes[3].textContent;
+    let arr = [];
+    arr.push(imgSrc, imgAlt, orderName, price);
+
+    localStorage.setItem("item", JSON.stringify(arr));
+  };
 }
